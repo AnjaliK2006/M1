@@ -1,66 +1,59 @@
 
 # EX-01-Datatypes-Operators
 ## AIM:
-Write a C program to read 3 characters one by one and print the characters in a reverse order.
+Write a C program to find the ASCII value of a given character.
 
 ## ALGORITHM:
-1.	Declare three character variables to store the input characters.
-2.	Use the scanf function to read the characters one by one from the user.
-3.	Print the characters in reverse order using the printf function.
-4.	End the program.
-
+1.Start the program and declare a variable to store a character.
+2.Read a character input from the user.
+3.Convert the character to its ASCII value using typecasting or by printing it as an integer.
+4.Display the ASCII value and end the program.
 ## PROGRAM:
-
+#include <stdio.h>
+int main()
+{
+    char a;
+    scanf("%c",&a);
+    printf("ASCII value of %c is %d",a,a);
+    return 0;
+}
 ## OUTPUT:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/8ffee53c-6736-4bd1-a1db-01a232ba1e1a)
 
 ## RESULT:
-Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
+Thus the program to  find the ASCII value of a given character has been executed successfully.
 
 
 # EX-02- Conditional-Statements
 ## AIM:
-Write a C program to read A values and check whether A is positive number or not.
+Write a C program to read A values and check whether the value is greater than and equal to 50. 
 
 # ALGORITHM:
-1.	Declare a variable to store the input value A.
-2.	Use the scanf function to read the value of A from the user.
-3.	Check if the value of A is greater than zero.
-4.	If A is greater than zero, print a message indicating that it's a positive number. 
-5.	Otherwise, print a message indicating that it's not a positive number.
-6.End the program.
+1.Start the program and declare an integer variable a.
+2.Read the value of a from the user using scanf.
+3.Check if a is greater than or equal to 50 using an if condition.
+4.Display a message if the condition is true; otherwise, display nothing. End the program.
 
 # PROGRAM:
-
+#include <stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a>=50){
+        printf("The Value is greater than or equal to 50");
+    }else{
+        printf(" ");
+    }
+    
+    return 0;   
+}
 # OUTPUT:
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/17761b34-4755-47e2-96a3-c97b39ec3d0e)
 
 # RESULT:
-Thus the program to read A values and check whether A is positive number or not has been executed successfully.
+Thus the program to read A values and check whether the value is greater than and equal to 50 has been executed successfully.
  
  
  
@@ -80,16 +73,16 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
-
+#include <stdio.h>
+int main()
+{
+    float a,b;
+    scanf("%f%f",&a,&b);
+    (a>b)? printf("Minimum between %.3f and %.3f is %.3f",a,b,b): printf("Minimum between %.3f and %.3f is %.3f",a,b,a);
+    return 0;
+}
 ## OUTPUT:
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/86aaea9f-34b3-42c9-ade5-060e728150a7)
 
 ## RESULT:
 Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
@@ -100,32 +93,32 @@ Thus the program to find minimum between two fraction numbers using conditional 
 # EX-04- Using Conditional Statements
 
 ## AIM:
-Write a C program to check whether the input value is equal to 1 using simple if statement
+Write a C program to read a, b values and check whether  a equal to b. 
 
 ## ALGORITHM:
-1.	Declare a variable to store the input value.
-2.	Use the scanf function to read the input value from the user.
-3.	Use an if statement to check if the input value is equal to 1.
-4.	If the condition in the if statement is true, print a message indicating that the input value is equal to 1.
-5.	Otherwise, print a message indicating that it's not equal to 1.
-6.	End the program.
+1.Start the program and declare two integer variables a and b.
+2.Read the values of a and b from the user using scanf.
+3.Compare whether a is equal to b using an if condition.
+4.Display "a is equal to b" if the condition is true; otherwise, print nothing. End the program.
 
 ## PROGRAM:
-
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a==b){
+        printf("a is equal to b");
+    }else{
+        printf(" ");
+    }
+    
+ return 0;   
+}
 ## OUTPUT:
-
-
-
-
-
-
-
-
-
-	
-
+![image](https://github.com/user-attachments/assets/47ecb89f-f7f9-4ccb-8b2a-5faecbbede27)
 ## RESULT:
-Thus the program to check whether the input value is equal to 1 using simple if statement has been executed successfully
+Thus the program to read a, b values and check whether a equal to b has been executed successfully
 
 
 
@@ -147,8 +140,33 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
+int main() {
+    int m1, m2, m3;
+    int total;
+    float percentage;
+    printf("Enter marks of three subjects: ");
+    scanf("%d %d %d", &m1, &m2, &m3);
+    if (m1 < 35 || m2 < 35 || m3 < 35) {
+        printf("Result: Fail (One or more subjects below pass marks)\n");
+    } else {
+        total = m1 + m2 + m3;
+        percentage = total / 3.0;
+        printf("Total Marks = %d\n", total);
+        printf("Percentage = %.2f%%\n", percentage);
+        if (percentage >= 60) {
+            printf("Division: First\n");
+        } else if (percentage >= 50) {
+            printf("Division: Second\n");
+        } else {
+            printf("Division: Pass\n");
+        }
+    }
+
+    return 0;
+}
 
 ## OUTPUT:
+![image](https://github.com/user-attachments/assets/4bca5575-3f68-43d6-b6bf-2b479c704b3d)
 
 ## RESULT:
 The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.

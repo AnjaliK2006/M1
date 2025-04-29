@@ -9,6 +9,7 @@ Write a C program to find the ASCII value of a given character.
 3.Convert the character to its ASCII value using typecasting or by printing it as an integer.
 4.Display the ASCII value and end the program.
 ## PROGRAM:
+```
 #include <stdio.h>
 int main()
 {
@@ -17,6 +18,7 @@ int main()
     printf("ASCII value of %c is %d",a,a);
     return 0;
 }
+```
 ## OUTPUT:
 
 ![image](https://github.com/user-attachments/assets/8ffee53c-6736-4bd1-a1db-01a232ba1e1a)
@@ -36,6 +38,7 @@ Write a C program to read A values and check whether the value is greater than a
 4.Display a message if the condition is true; otherwise, display nothing. End the program.
 
 # PROGRAM:
+```
 #include <stdio.h>
 int main()
 {
@@ -49,6 +52,7 @@ int main()
     
     return 0;   
 }
+```
 # OUTPUT:
 ![image](https://github.com/user-attachments/assets/17761b34-4755-47e2-96a3-c97b39ec3d0e)
 
@@ -73,6 +77,7 @@ Write a program to find minimum between two fraction numbers using conditional o
 7.	Print the minimum value.
 
 ## PROGRAM:
+```
 #include <stdio.h>
 int main()
 {
@@ -81,6 +86,7 @@ int main()
     (a>b)? printf("Minimum between %.3f and %.3f is %.3f",a,b,b): printf("Minimum between %.3f and %.3f is %.3f",a,b,a);
     return 0;
 }
+```
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/86aaea9f-34b3-42c9-ade5-060e728150a7)
 
@@ -102,6 +108,7 @@ Write a C program to read a, b values and check whether  a equal to b.
 4.Display "a is equal to b" if the condition is true; otherwise, print nothing. End the program.
 
 ## PROGRAM:
+```
 #include <stdio.h>
 int main()
 {
@@ -115,6 +122,7 @@ int main()
     
  return 0;   
 }
+```
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/47ecb89f-f7f9-4ccb-8b2a-5faecbbede27)
 ## RESULT:
@@ -140,6 +148,7 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 9.	Else: Print “Division = Fail”
 10.	End
 ## PROGRAM:
+```
 int main() {
     int m1, m2, m3;
     int total;
@@ -164,6 +173,7 @@ int main() {
 
     return 0;
 }
+```
 
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/4bca5575-3f68-43d6-b6bf-2b479c704b3d)
